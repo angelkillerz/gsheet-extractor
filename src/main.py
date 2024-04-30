@@ -11,9 +11,9 @@ try:
     spreadsheet_id = "xxx"
     data_range = "Sheet2!A3:F7" 
 
+    credentials = service_account.Credential.
 
 except OSError as e:
-
-    print e
+    print(e)
 
 

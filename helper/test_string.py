@@ -1,7 +1,9 @@
 def spreadsheet_id_extractor(url):
     BASE_URL = "https://docs.google.com/spreadsheets/d/"
+    BASE_SPLITTER = "d"
     stripped_url = url.split("/")
-    return stripped_url
+    index_splitter = stripped_url.index(BASE_SPLITTER)
+    return stripped_url[index_splitter + 1]
 
 test_input = input("Enter url: ")
 
